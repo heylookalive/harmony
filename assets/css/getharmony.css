@@ -1,12 +1,2 @@
 
-/* Pattern coutesy of subtlepatterns.com */
-body {
-  background: #fff repeat url(../images/square_bg.png);
-  padding: 0 20px;
-}
 
-#logo {
-  width: 250px;
-  height: 250px;
-  background: url(../images/logo.png) no-repeat 0 0;
-}
