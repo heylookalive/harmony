@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/arcadia.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -50,27 +51,86 @@
     </header>
 
     <div id="content" class="container">
+      <h1>Thread title!</h1>
+
+      <hr>
+
       <div class="row">
         <div class="col-md-9" role="main">
-          <h1>Thread title!</h1>
+          <article class="post">
+            <div class="row">
+              <div class="user-profile col-sm-2 hidden-xs text-center">
+                <div class="avatar">
+                  <a href="user-profile.html" class="inline-centre"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                </div>
+                <a href="user-profile.html">user</a>
+              </div>
+
+              <div class="post col-sm-10">
+                <header class="clearfix">
+                  <div class="pull-left visible-xs">
+                    By <a href="user-profile.html">user</a>
+                  </div>
+
+                  <ul class="list-inline pull-right">
+                    <li>Posted 24 hours ago</li>
+                    <li><span class="glyphicon glyphicon-pencil"></span> <a href="post-revisions.html">5 edits</a></li>
+                  </ul>
+                </header>
+
+                <div class="post-content">
+                  <p>Posty post post.</p>
+                </div>
+
+                <hr>
+
+                <footer>
+                  <ul class="list-inline pull-right">
+                    <li><a href="post-reply-form.html">Reply</a></li>
+                    <li><a href="post-reply-form.html">Reply as a new thread</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 5 Likes</a></li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </article>
+
         </div>
 
         <div class="col-md-3" role="complementary">
-          
-          <dl>
-            <dt>Posted</dt>
-            <dd>24 hours ago by <a href="user-profile.html">user</a></dd>
-            <dt>Last updated</dt>
-            <dd>10 minutes ago by <a href="user-profile.html">another user</a></dd>
-            <dt>Posted in</dt>
-            <dd><span class="label label-primary">Puppies</span></dd>
-            <dt>Posts</dt>
-            <dd>9</dd>
-            <dt>Views</dt>
-            <dd>100 times</dd>
-            <dt>Likes</dt>
-            <dd>0</dd>
-          </dl>
+
+          <ul class="list-group post-meta">
+            <li class="list-group-item"><i class="fa fa-clock-o"></i> Posted 24 hours ago by <a href="user-profile.html">user</a></li>
+            <li class="list-group-item"><i class="fa fa-tags"></i> In <a href="category-thread-listing.html">Puppies</a></li>
+            <li class="list-group-item"><i class="fa fa-reply"></i> 8 Replies</li>
+            <li class="list-group-item"><i class="fa fa-eye"></i> 241 Views</li>
+            <li class="list-group-item"><i class="fa fa-heart-o"></i> 0 Likes</li>
+          </ul>
+
+          <h4>4 Participants</h4>
+
+          <div class="row">
+            <div class="col-xs-6 col-sm-3">
+              <div class="avatar">
+                <a href="user-profile.html" class="inline-centre"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="avatar">
+                <a href="user-profile.html" class="inline-centre"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="avatar">
+                <a href="user-profile.html" class="inline-centre"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+              <div class="avatar">
+                <a href="user-profile.html" class="inline-centre"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>

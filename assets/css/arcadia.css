@@ -10,4 +10,11 @@ body {
   margin-right: 0;
 }
 
+.inline-centre {
+  margin: 0 auto;
+  display: inline-block;
+}
 
+.avatar img {
+  background: #fff;
+}
