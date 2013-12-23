@@ -6,8 +6,17 @@
 
 @inverse-text: #fff;
 
+.no-underline {
+  text-decoration: none;
+}
+
+
 body {
   padding-top: 50px;
+}
+
+.margin-right {
+  margin-right: 5px;
 }
 
 /* Have the mobile navbar menu toggle on the left instead of right. */
@@ -19,8 +28,22 @@ body {
 
 .post-listing .post {
   margin-bottom: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+  padding-top: 5px;
+  border-top: 1px solid @hr-border;
+}
+
+.post .user-profile {
+  margin-top: 27px;
+}
+
+.post footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid @hr-border;
+}
+
+.post footer a:hover {
+  .no-underline;
 }
 
 .inline-centre {
@@ -30,10 +53,24 @@ body {
 
 .avatar {
   position: relative;
+  display: inline-block;
 }
 
 .avatar img {
   background: #fff;
+}
+
+.in-reply-to {
+  display: block;
+  position: relative;
+  top: -5px;
+  padding: 4px 9px;
+  border: 1px solid @hr-border;
+  border-top: 0;
+}
+
+.in-reply-to:hover {
+  .no-underline;
 }
 
 .overlay {
@@ -41,11 +78,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 4px;
+  padding: 3px 6px 2px;
   color: @inverse-text;
   background: black;
   background: rgba(0, 0, 0, 0.7);
 
   .small;
 }
-
