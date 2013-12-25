@@ -10,9 +10,26 @@
   text-decoration: none;
 }
 
+.inline-hidden-xs {
+  display: none !important;
+}
+
+@media (min-width: @screen-sm) {
+  .inline-hidden-xs {
+    display: inline !important;
+  }
+}
+
+/* Allow two navs on one line http://bootply.com/79216 */
+.navbar-collapse:before,
+.navbar-collapse:after {
+  display: inline;
+  content: '';
+}
 
 body {
   padding-top: 50px;
+  padding-bottom: 15px;
   /** To edit this background, follow this link:
   http://svgeneration.com/generate/Circles-Everywhere?background=ffffff&top-left=904bdb&top-right=33f04c&bottom-right=e3e352&bottom-left=eb9c34&center=d94747&top-center=3751b8&
   */
@@ -21,7 +38,7 @@ body {
 
 body.thread-page h1 {
   margin-top: 30px;
-  color: white;
+  color: @inverse-text;
 }
 
 #content {
@@ -46,18 +63,32 @@ body.thread-page h1 {
   margin-right: 0;
 }
 
+/* Anchor this nav so it doesn't get tied up in the mobile menu. */
+@media (max-width: @screen-sm) {
+  #user-nav {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 2;
+  }
+
+  #user-nav > li {
+    float: left;
+  }
+}
+
 .post-listing .post {
   margin-bottom: 20px;
   padding-top: 5px;
   border-top: 1px solid @hr-border;
 }
 
-.post-listing .post:first-child {
+.post-listing > .post:first-child {
   border-top: 0;
 }
 
-.post .user-profile {
-  margin-top: 27px;
+.post header {
+  margin-bottom: 5px;
 }
 
 .post footer {
@@ -74,7 +105,8 @@ body.thread-page h1 {
   transition: opacity .25s ease-in-out;
 }
 
-.post:hover footer {
+/* Post replies can be shown inline, on hover only show child post controls. */
+.post:hover > .row > .post-content > footer {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
@@ -85,9 +117,10 @@ body.thread-page h1 {
   .no-underline;
 }
 
-.inline-centre {
-  margin: 0 auto;
-  display: inline-block;
+@media (max-width: @screen-sm) {
+  .post .post {
+    margin-left: 20px;
+  }
 }
 
 .avatar {
@@ -112,7 +145,7 @@ body.thread-page h1 {
   .no-underline;
 }
 
-.overlay {
+.posts-overlay {
   display: block;
   position: absolute;
   bottom: 0;
@@ -123,4 +156,8 @@ body.thread-page h1 {
   background: rgba(0, 0, 0, 0.7);
 
   .small;
+}
+
+#footer {
+  margin-top: 40px;
 }
