@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harmony - Thread</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/arcadia.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="thread-page">
+    <a class="sr-only" href="#wrapper">Skip to main content</a>
+
+    <div id="wrapper">
+      <header class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header pull-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Arcadia</a>
+          </div>
+
+          <nav class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav><!--/.nav-collapse -->
+
+          <nav role="navigation" class="pull-right">
+            <ul id="user-nav" class="nav navbar-nav navbar-right">
+              <li><button type="button" class="btn btn-default navbar-btn">Log in / Register</button></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-user fa-lg"></i></a>
+                <div class="dropdown-menu">
+                  aaa
+                </div>
+              </li>
+              <li><a href="#"><i class="fa fa-plus"></i><span class="inline-hidden-xs"> New thread</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div id="main" class="container">
+        <h1>Thread title!</h1>
+
+        <div id="content" class="row">
+          <div class="col-md-9 post-listing" role="main">
+
+            <article class="post">
+              <header class="clearfix small text-muted">
+                <div class="visible-xs pull-left margin-right"><span >By <a href="user-profile.html">user</a></div>
+
+                <ul class="list-inline pull-right">
+                  <li>Posted 24 hours ago</li>
+                  <li><span class="glyphicon glyphicon-pencil"></span> <a href="post-revisions.html">5 edits</a></li>
+                </ul>
+              </header>
+
+              <div class="row">
+                <div class="user-profile col-sm-2 hidden-xs text-center">
+                  <div class="avatar">
+                    <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                  </div>
+                  <div>
+                    <a href="user-profile.html">user</a>
+                  </div>
+                </div>
+
+                <div class="post-content col-sm-10">
+                  <div class="post-content">
+                    <p>Posty post post.</p>
+                  </div>
+
+                  <footer class="clearfix">
+                    <ul class="list-inline pull-left">
+                      <li><a href="#">2 replies</a></li>
+                    </ul>
+
+                    <ul class="list-inline pull-right">
+                      <li><a href="post-reply-form.html"><i class="fa fa-reply fa-fw"></i> Reply</a></li>
+                      <li class="inline-hidden-xs"><a href="post-reply-form.html"><i class="fa fa-share fa-fw"></i> Reply as a new thread</a></li>
+                      <li><i class="fa fa-heart"></i> 5 <a href="#">Like?</a></li>
+                      <li><a href="#"><i class="fa fa-exclamation"></i> Report post</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </div>
+            </article>
+
+            <article class="post">
+              <header class="row small text-muted">
+                <div class="col-sm-10 col-sm-offset-2">
+                  <div class="visible-xs pull-left margin-right"><span >By <a href="user-profile.html">user</a></div>
+                  <div class="pull-left">
+                    <a href="#" class="in-reply-to">In reply to <span class="avatar"><img src="files/20-20/avatar.png" alt="" class="img-circle"></span> user</a>
+                  </div>
+
+                  <ul class="list-inline pull-right">
+                    <li>Posted 24 hours ago</li>
+                  </ul>
+                </div>
+              </header>
+
+              <div class="row">
+                <div class="user-profile col-sm-2 hidden-xs text-center">
+                  <div class="avatar">
+                    <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                  </div>
+                  <div>
+                    <a href="user-profile.html">user</a>
+                  </div>
+                </div>
+
+                <div class="post-content col-sm-10">
+                  <div class="post-content">
+                    <p>Here's a few lines in reply to the previous post.</p>
+                    <p><strong>Blah!</strong> blah blah blah...</p>
+                    <ul>
+                      <li>A list!</li>
+                    </ul>
+                  </div>
+
+                  <footer class="clearfix">
+                    <ul class="list-inline pull-right">
+                      <li><a href="post-reply-form.html"><i class="fa fa-reply fa-fw"></i> Reply</a></li>
+                      <li class="inline-hidden-xs"><a href="post-reply-form.html"><i class="fa fa-share fa-fw"></i> Reply as a new thread</a></li>
+                      <li><i class="fa fa-heart"></i> 5 <a href="#">Like?</a></li>
+                      <li><a href="#"><i class="fa fa-exclamation"></i> Report post</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="col-md-3" role="complementary">
+
+            <ul class="list-group post-meta">
+              <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i> Posted 24 hours ago by <a href="user-profile.html"><span class="avatar"><img src="files/20-20/avatar.png" alt="" class="img-circle"></span> user</a></li>
+              <li class="list-group-item"><i class="fa fa-tags fa-fw"></i> In <a href="category-thread-listing.html">Puppies</a></li>
+              <li class="list-group-item"><i class="fa fa-reply-all fa-fw"></i> 8 Posts</li>
+              <li class="list-group-item"><i class="fa fa-eye fa-fw"></i> 241 Views</li>
+              <li class="list-group-item"><i class="fa fa-heart fa-fw"></i> 0 Likes <small>(<a href="#" data-toggle="tooltip" title="Total likes within this thread">?</a>)</small></li>
+            </ul>
+
+            <h4>4 Participants</h4>
+
+            <ul class="list-unstyled row text-center">
+              <li class="col-xs-4 col-sm-3">
+                <div class="avatar">
+                  <a href="user-profile.html">
+                    <img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle">
+                    <span class="posts-overlay">3</span>
+                  </a>
+                </div>
+              </li>
+              <li class="col-xs-4 col-sm-3">
+                <div class="avatar">
+                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                </div>
+              </li>
+              <li class="col-xs-4 col-sm-3">
+                <div class="avatar">
+                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                </div>
+              </li>
+              <li class="col-xs-4 col-sm-3">
+                <div class="avatar">
+                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                </div>
+              </li>
+            </ul>
+
+            <h4>Threads continuing from this one</h4>
+
+            ...
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer id="footer" class="text-center" role="contentinfo">Forum built with <a href="http://getharmony.io">Harmony</a> and <a href="http://drupal.org">Drupal</a></footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/arcadia.js"></script>
+  </body>
+</html>
