@@ -27,7 +27,18 @@
   content: '';
 }
 
-body {
+/* Add some sharp corners. */
+.modal-content {
+  border-radius: 0;
+}
+
+body.modal-open #wrapper {
+  -webkit-filter: blur(3px);
+  -webkit-transform: translate3d(0, 0, 0);
+  filter: blur(3px);
+}
+
+#wrapper {
   padding-top: 50px;
   padding-bottom: 15px;
   /** To edit this background, follow this link:

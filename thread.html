@@ -50,7 +50,11 @@
 
           <nav role="navigation" class="pull-right">
             <ul id="user-nav" class="nav navbar-nav navbar-right">
-              <li><button type="button" class="btn btn-default navbar-btn">Log in / Register</button></li>
+              <li>
+                <p class="navbar-text">
+                  <a href="login-modal.html" class="" data-toggle="modal" data-target="#login-modal">Log in</a> / <a href="#">Register</a>
+                </p>
+              </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-user fa-lg"></i></a>
                 <div class="dropdown-menu">
@@ -206,6 +210,8 @@
 
       <footer id="footer" class="text-center" role="contentinfo">Forum built with <a href="http://getharmony.io">Harmony</a> and <a href="http://drupal.org">Drupal</a></footer>
     </div>
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true"></div>
 
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
