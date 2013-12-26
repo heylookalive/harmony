@@ -109,22 +109,27 @@ body.thread-page h1 {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid @hr-border;
-
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.3;
-  -ms-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  transition: opacity .25s ease-in-out;
 }
 
-/* Post replies can be shown inline, on hover only show child post controls. */
-.post:hover > .row > .post-content > footer {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  zoom: 1;
+/* Fade in/out controls for devices which aren't xs! */
+@media (min-width: @screen-sm) {
+  .post footer {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    -ms-transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+  }
+
+  /* Post replies can be shown inline, on hover only show child post controls. */
+  .post:hover > .row > .post-content > footer {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    zoom: 1;
+  }
 }
 
 .post footer a:hover {
