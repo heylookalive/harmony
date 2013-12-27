@@ -72,12 +72,28 @@ body.thread-page h1 {
 
 /* Have the mobile navbar menu toggle on the left instead of right. */
 .navbar-toggle {
-  float: left;
-  margin-left: 15px;
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  margin-left: 0;
   margin-right: 0;
+  border: 0;
+  border-radius: 0;
 }
 
 @media (max-width: @screen-xs-max) {
+  /* Have the branding sit dead centre for mobile. */
+  .navbar-header {
+    /* Important makes sad inside. */
+    float: none !important;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    float: none;
+    display: inline-block;
+  }
+
   .navbar-text {
     margin: 10px 0;
   }
