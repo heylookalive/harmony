@@ -32,6 +32,16 @@
   border-radius: 0;
 }
 
+.list-slim-nav > li > a {
+  display: block;
+  padding: 6px 0;
+  color: #555;
+}
+
+.list-slim-nav > li > a:hover {
+  .no-underline;
+}
+
 body {
   /** To edit this background, follow this link:
   http://svgeneration.com/generate/Circles-Everywhere?background=ffffff&top-left=904bdb&top-right=33f04c&bottom-right=e3e352&bottom-left=eb9c34&center=d94747&top-center=3751b8&
@@ -133,19 +143,29 @@ body.thread-page h1 {
 #user-nav .dropdown-menu {
   position: absolute;
   left: auto;
-  right: 0;
+  right: -51px;
+  width: 320px;
+  margin-top: 5px;
+  padding: 10px 15px;
   float: left;
   padding-top: 10px;
   background: @body-bg;
-  border: 1px solid @navbar-default-border;
-  border-top: 0;
+  border: 2px solid #f0f0f0;
   border-radius: 0;
+  box-shadow: none;
 }
 
-@media (max-width: @screen-xs-max) {
+@media (min-width: @screen-sm-min) {
   #user-nav .dropdown-menu {
-    margin-top: 5px;
+    right: 0;
+    margin-top: 0;
   }
+}
+
+#user-nav .dropdown-menu header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid @navbar-default-border;
+  padding-bottom: 10px;
 }
 
 .post-listing .post {
