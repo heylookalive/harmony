@@ -57,6 +57,10 @@
   bottom: 0;
 }
 
+.list-group-item.media {
+  margin-top: 0;
+}
+
 .list-slim-nav > li > a {
   display: block;
   padding: 6px 0;
@@ -199,7 +203,7 @@ body.thread-page h1 {
   right: -10px;
   width: 320px;
   margin-top: 5px;
-  padding: 10px 15px;
+  padding: 10px 15px 0;
   float: left;
   padding-top: 10px;
   background: @body-bg;
@@ -220,6 +224,40 @@ body.thread-page h1 {
   margin-bottom: 10px;
   border-bottom: 1px solid @navbar-default-border;
   padding-bottom: 10px;
+}
+
+#user-nav .dropdown-menu header a {
+  .no-underline;
+}
+
+.messages-dropdown .list-wrapper {
+  max-height: 200px;
+  overflow-x: scroll;
+}
+
+@media (min-height: 600px) {
+  .messages-dropdown .list-wrapper {
+    max-height: 350px;
+  }
+}
+
+.message-teaser .date {
+  font-size: 11px;
+}
+
+.msg-notification {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #DDD;
+  text-align: center;
+  color: white;
+  line-height: 33px;
+  .img-circle;
+}
+
+.msg-status {
+  color: #ddd;
 }
 
 .post-listing .post {

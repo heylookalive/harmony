@@ -93,8 +93,48 @@
 
                 </div>
               </li>
-              <li>
-                <a href="messages.html"><i class="fa fa-inbox fa-lg"></i> <span class="badge">4</span></a>
+              <li class="dropdown">
+                <a href="messages.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-inbox fa-lg"></i> <span class="badge">2</span></a>
+                <div class="dropdown-menu messages-dropdown">
+
+                  <header class="clearfix small">
+                    <a href="messages.html" class="pull-left">View all</a>
+                    <a href="messages-new.html" class="pull-right">Send a new message</a>
+                  </header>
+
+                  <div class="list-wrapper">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item media message message-teaser">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">12 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                      <a href="thread.html" class="list-group-item media message message-teaser">
+                        <span class="msg-notification pull-left"><i class="fa fa-exclamation fa-fw fa-lg"></i></span>
+                        <div class="media-body small">
+                          <strong>Notification</strong> <span class="date">31 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text"><strong>User</strong> quoted your post in the thread &quot;Thread title!&quot;.</span>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item media message message-teaser">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">12 minutes ago</span> <i class="msg-status fa fa-circle-o pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                      <a href="thread.html" class="list-group-item media message message-teaser">
+                        <span class="msg-notification pull-left"><i class="fa fa-exclamation fa-fw fa-lg"></i></span>
+                        <div class="media-body small">
+                          <strong>Notification</strong> <span class="date">31 minutes ago</span> <i class="msg-status fa fa-circle-o pull-right"></i><br>
+                          <span class="msg-text"><strong>User</strong> quoted your post in the thread &quot;Thread title!&quot;.</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li><a href="thread-modal.html" data-toggle="modal" data-target="#thread-modal" data-backdrop="" data-keyboard=""><i class="fa fa-plus"></i><span class="inline-hidden-xs"> New thread</span></a></li>
             </ul>
