@@ -88,6 +88,10 @@ body {
   filter: blur(3px);
 }*/
 
+.container {
+  position: relative;
+}
+
 #wrapper {
   padding-top: 50px;
   padding-bottom: 15px;
@@ -149,10 +153,7 @@ body.thread-page h1 {
   .navbar-text {
     margin: 10px 0;
   }
-}
-
-/* Anchor this nav so it doesn't get tied up in the mobile menu. */
-@media (max-width: @screen-xs-max) {
+  /* Anchor this nav so it doesn't get tied up in the mobile menu. */
   #user-nav {
     position: absolute;
     top: -3px;
@@ -162,6 +163,10 @@ body.thread-page h1 {
 
   #user-nav > li {
     float: left;
+  }
+
+  #user-nav li.dropdown {
+    position: static;
   }
 
   #user-nav > li > a {
@@ -191,7 +196,7 @@ body.thread-page h1 {
 #user-nav .dropdown-menu {
   position: absolute;
   left: auto;
-  right: -51px;
+  right: -10px;
   width: 320px;
   margin-top: 5px;
   padding: 10px 15px;
