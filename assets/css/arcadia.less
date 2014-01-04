@@ -51,11 +51,21 @@
   box-shadow: none;
 }
 
+.form-control[type='text'],
+.form-control[type='email'],
+.form-control[type='password'] {
+  -webkit-appearance: none;
+}
+
 /* Allow two navs on one line http://bootply.com/79216 */
 .navbar-collapse:before,
 .navbar-collapse:after {
   display: inline;
   content: '';
+}
+
+.modal-narrow {
+
 }
 
 .modal-header .close {
