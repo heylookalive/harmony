@@ -143,7 +143,15 @@
       </header>
 
       <div id="main" class="container">
-        <h1>Thread title!</h1>
+        <header class="main-header clearfix">
+          <h1 class="pull-left">Thread title!</h1>
+
+          <div class="pull-right page-operations">
+            <a href="#" class="btn btn-trans"><i class="fa fa-pencil fa-fw"></i> Edit thread</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-trash-o fa-fw"></i> Delete thread</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-cog fa-fw"></i> Administer posts</a>
+          </div>
+        </header>
 
         <div id="content" class="row">
           <div class="col-md-9" role="main">
@@ -327,47 +335,61 @@
             </div>
           </div>
 
-          <div class="col-md-3" role="complementary">
+          <div class="col-md-3 sidebar sidebar-second" role="complementary">
 
-            <ul class="list-group post-meta">
-              <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i> Posted 24 hours ago by <a href="user-profile.html"><span class="avatar"><img src="files/20-20/avatar.png" alt="" class="img-circle"></span> user</a></li>
-              <li class="list-group-item"><i class="fa fa-tags fa-fw"></i> In <a href="category-thread-listing.html">Puppies</a></li>
-              <li class="list-group-item"><i class="fa fa-reply-all fa-fw"></i> 8 Posts</li>
-              <li class="list-group-item"><i class="fa fa-eye fa-fw"></i> 241 Views</li>
-              <li class="list-group-item"><i class="fa fa-heart fa-fw"></i> 0 Likes <small>(<a href="#" class="help-tooltip" data-toggle="tooltip" title="Total likes within this thread">?</a>)</small></li>
-            </ul>
+            <section class="block">
+              <ul class="list-group post-meta">
+                <li class="list-group-item"><i class="fa fa-clock-o fa-fw"></i> Posted 24 hours ago by <a href="user-profile.html"><span class="avatar"><img src="files/20-20/avatar.png" alt="" class="img-circle"></span> user</a></li>
+                <li class="list-group-item"><i class="fa fa-tags fa-fw"></i> In <a href="category-thread-listing.html">Puppies</a></li>
+                <li class="list-group-item"><i class="fa fa-reply-all fa-fw"></i> 8 Posts</li>
+                <li class="list-group-item"><i class="fa fa-eye fa-fw"></i> 241 Views</li>
+                <li class="list-group-item"><i class="fa fa-heart fa-fw"></i> 0 Likes <small>(<a href="#" class="help-tooltip" data-toggle="tooltip" title="Total likes within this thread">?</a>)</small></li>
+              </ul>
+            </section>
 
-            <h4>4 Participants</h4>
+            <section class="block">
+              <h4>Thread tools</h4>
 
-            <ul class="list-unstyled row text-center">
-              <li class="col-xs-4 col-sm-3">
-                <div class="avatar">
-                  <a href="user-profile.html">
-                    <img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle">
-                    <span class="posts-overlay">3</span>
-                  </a>
-                </div>
-              </li>
-              <li class="col-xs-4 col-sm-3">
-                <div class="avatar">
-                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
-                </div>
-              </li>
-              <li class="col-xs-4 col-sm-3">
-                <div class="avatar">
-                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
-                </div>
-              </li>
-              <li class="col-xs-4 col-sm-3">
-                <div class="avatar">
-                  <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
-                </div>
-              </li>
-            </ul>
+              <ul class="list-group post-meta">
+                <li class="list-group-item"><a href="#"><i class="fa fa-star-o fa-fw"></i> Star this thread</a></li>
+                <li class="list-group-item"><a href="#"><i class="fa fa-check-square fa-fw"></i> Unsubscribe from this thread</a> <small>(<a href="#" class="help-tooltip" data-toggle="tooltip" title="Get notifications when people post new replies">?</a>)</small></li>
+              </ul>
+            </section>
 
-            <h4>Threads continuing from this one</h4>
+            <section class="block">
+              <h4>4 Participants</h4>
 
-            ...
+              <ul class="list-unstyled row text-center">
+                <li class="col-xs-4 col-sm-3">
+                  <div class="avatar">
+                    <a href="user-profile.html">
+                      <img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle">
+                      <span class="posts-overlay">3</span>
+                    </a>
+                  </div>
+                </li>
+                <li class="col-xs-4 col-sm-3">
+                  <div class="avatar">
+                    <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                  </div>
+                </li>
+                <li class="col-xs-4 col-sm-3">
+                  <div class="avatar">
+                    <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                  </div>
+                </li>
+                <li class="col-xs-4 col-sm-3">
+                  <div class="avatar">
+                    <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <section class="block">
+              <h4>Threads continuing from this one</h4>
+              ...
+            </section>
 
           </div>
         </div>
