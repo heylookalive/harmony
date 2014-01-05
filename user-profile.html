@@ -84,7 +84,7 @@
                         <nav role="navigation">
                           <ul class="list-unstyled list-slim-nav">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i> My profile</span></a></li>
-                            <li><a href="#"><i class="fa fa-cog fa-fw"></i> Settings</span></a></li>
+                            <li><a href="#"><i class="fa fa-cog fa-fw"></i> Edit my profile &amp; settings</span></a></li>
                             <li><a href="#"><i class="fa fa-question fa-fw"></i> Help</a></li>
                           </ul>
                         </nav>
@@ -174,7 +174,7 @@
 
           <div class="pull-right page-operations">
             <a href="#" class="btn btn-trans"><i class="fa fa-envelope-o fa-fw"></i> Message</a>
-            <a href="#" class="btn btn-trans"><i class="fa fa-pencil fa-fw"></i> Edit user</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-cog fa-fw"></i> Edit profile &amp; settings</a>
             <a href="#" class="btn btn-trans"><i class="fa fa-check-square-o fa-fw"></i> Subscriptions</a>
             <a href="#" class="btn btn-trans"><i class="fa fa-ban fa-fw"></i> Ban user</a>
           </div>
@@ -182,8 +182,20 @@
 
         <div id="content">
           <div class="user-profile-banner row">
-            <div class="col-xs-12 text-center">
-              aa
+            <div class="col-xs-12">
+              <div class="background">
+                <div class="row">
+                  <div class="col-sm-3 text-center">
+                    <span class="avatar"><img src="files/188-188/avatar.png" alt="" class="img-circle"></span>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul class="list-unstyled list-trans">
+                      <li><strong>Threads</strong> 4</li>
+                      <li><strong>Posts</strong> 1k</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -199,7 +211,39 @@
             </div>
 
             <div class="col-sm-9">
-              bb
+
+              <div class="thread-listing table-list">
+                <div class="table-list-head">
+                  <ul class="list-unstyled table-list-row">
+                    <li class="tl-title">Title</li>
+                    <li class="tl-category text-center">Category</li>
+                    <li class="tl-posts text-center">Posts</li>
+                    <li class="tl-users text-center">Author</li>
+                    <li class="tl-views text-center">Views</li>
+                    <li class="tl-activity text-center">Created/Updated</li>
+                  </ul>
+                </div>
+                <ol class="list-unstyled table-list-body">
+                  <li>
+                    <div class="tl-cell tl-title"><a href="thread.html">Here's a really long title which should never happen as we limit the length of a title...</a></div>
+                    <div class="tl-cell tl-meta tl-category text-center"><a href="category-thread-listing.html">Puppies</a></div>
+                    <div class="tl-cell tl-meta tl-posts text-center">4<span class="inline-visible-xs"> posts</span></div>
+                    <div class="tl-cell tl-meta tl-users text-center"><span class="inline-visible-xs">By </span><a href="user-profile.html" title="user"><span class="avatar"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span></a></div>
+                    <div class="tl-cell tl-meta tl-views text-center">92<span class="inline-visible-xs"> Views</span></div>
+                    <div class="tl-cell tl-meta tl-activity"><div class="date created">-</div> <div class="date updated">-</div></div>
+                  </li>
+                  <li>
+                    <div class="tl-cell tl-title"><a href="thread.html">Here's a really long title which should never happen as we limit the length of a title...</a></div>
+                    <div class="tl-cell tl-meta tl-category text-center"><a href="category-thread-listing.html">Puppies</a></div>
+                    <div class="tl-cell tl-meta tl-posts text-center">4<span class="inline-visible-xs"> posts</span></div>
+                    <div class="tl-cell tl-meta tl-users text-center"><span class="inline-visible-xs">By </span><a href="user-profile.html" title="user"><span class="avatar"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span></a></div>
+                    <div class="tl-cell tl-meta tl-views text-center">92<span class="inline-visible-xs"> Views</span></div>
+                    <div class="tl-cell tl-meta tl-activity"><div class="date created">-</div> <div class="date updated">-</div></div>
+                  </li>
+                </ol>
+              </div>
+
+
             </div>
           </div>
         </div>
