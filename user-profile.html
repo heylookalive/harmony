@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harmony - User profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/arcadia.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="thread-page">
+    <a class="sr-only" href="#wrapper">Skip to main content</a>
+
+    <div id="wrapper">
+      <header class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header pull-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Arcadia</a>
+          </div>
+
+          <nav class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav><!--/.nav-collapse -->
+
+          <nav role="navigation" class="pull-right">
+            <ul id="user-nav" class="nav navbar-nav navbar-right">
+              <!--<li>
+                <p class="navbar-text">
+                  <a href="login-modal.html" class="" data-toggle="modal" data-target="#login-modal">Log in</a> / <a href="#">Register</a>
+                </p>
+              </li>-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                  <span class="avatar"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span> <i class="fa fa-angle-down"> </i>
+                </a>
+                <div class="dropdown-menu">
+
+                    <div class="row">
+                      <div class="col-xs-4 text-center">
+                        <div class="avatar">
+                          <a href="user-profile.html"><img src="files/80-80/avatar.png" alt="" class="img-responsive img-circle"></a>
+                        </div>
+                        <dl class="small">
+                          <dt>Threads</dt>
+                          <dd>4</dd>
+                          <dt>Posts</dt>
+                          <dd>1k</dd>
+                        </dl>
+                      </div>
+
+                      <div class="col-xs-8">
+                        <header class="clearfix">
+                          <a href="user-profile.html" class="pull-left">user</a>
+                          <a href="#" class="pull-right"><i class="fa fa-sign-out"></i> Log out</a>
+                        </header>
+
+                        <nav role="navigation">
+                          <ul class="list-unstyled list-slim-nav">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> My profile</span></a></li>
+                            <li><a href="#"><i class="fa fa-cog fa-fw"></i> Settings</span></a></li>
+                            <li><a href="#"><i class="fa fa-question fa-fw"></i> Help</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="messages.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-inbox fa-lg navbar-unread"></i><span class="badge badge-red ib-hidden-xs">2</span></a>
+                <div class="dropdown-menu messages-dropdown">
+                  <header class="clearfix small">
+                    <a href="messages.html" class="pull-left">View all</a>
+                    <a href="messages-new.html" class="pull-right">Send a new message</a>
+                  </header>
+
+                  <div class="list-wrapper">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item media message message-teaser message-unread">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">12 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item media message message-teaser message-unread">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">32 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item media message message-teaser">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">52 minutes ago</span> <i class="msg-status fa fa-circle-o pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                      <a href="#" class="list-group-item media message message-teaser">
+                        <span class="avatar pull-left"><img src="files/32-32/avatar.png" alt="" class="img-circle"></span>
+                        <div class="media-body small">
+                          <strong>user</strong> <span class="date">1 hour 3 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text msg-txt-clip">Here's some text that will be trimmed as it'll be too long to display</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-bell-o fa-lg"></i></a>
+                <div class="dropdown-menu messages-dropdown">
+                  <header class="clearfix small">
+                    <a href="messages.html">Mark all as read</a>
+                  </header>
+
+                  <div class="list-wrapper">
+                    <div class="list-group">
+                      <a href="thread.html" class="list-group-item media message message-teaser message-unread">
+                        <span class="msg-notification pull-left"><i class="fa fa-exclamation fa-fw fa-lg"></i></span>
+                        <div class="media-body small">
+                          <span class="date">31 minutes ago</span> <i class="msg-status fa fa-circle pull-right"></i><br>
+                          <span class="msg-text"><strong>user</strong> quoted your post in the thread &quot;Thread title!&quot;.</span>
+                        </div>
+                      </a>
+                      <a href="thread.html" class="list-group-item media message message-teaser">
+                        <span class="msg-notification pull-left"><i class="fa fa-exclamation fa-fw fa-lg"></i></span>
+                        <div class="media-body small">
+                          <span class="date">1 hour 6 minutes ago</span> <i class="msg-status fa fa-circle-o pull-right"></i><br>
+                          <span class="msg-text"><strong>user</strong> mentioned you in the thread &quot;Thread title!&quot;.</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="thread-modal.html" data-toggle="modal" data-target="#thread-modal" data-backdrop="" data-keyboard=""><i class="fa fa-plus"></i><span class="inline-hidden-xs"> New thread</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div id="main" class="container">
+        <header class="main-header clearfix">
+          <h1 class="pull-left">User</h1>
+
+          <div class="pull-right page-operations">
+            <a href="#" class="btn btn-trans"><i class="fa fa-envelope-o fa-fw"></i> Message</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-pencil fa-fw"></i> Edit user</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-check-square-o fa-fw"></i> Subscriptions</a>
+            <a href="#" class="btn btn-trans"><i class="fa fa-ban fa-fw"></i> Ban user</a>
+          </div>
+        </header>
+
+        <div id="content">
+          <div class="user-profile-banner row">
+            <div class="col-xs-12 text-center">
+              aa
+            </div>
+          </div>
+
+          <div class="user-info row">
+            <div class="col-sm-3">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Threads</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Starred threads</a></li>
+                <li><a href="#">Likes</a></li>
+                <li><a href="#">Mentions</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-9">
+              bb
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer id="footer" class="text-center" role="contentinfo">Forum built with <a href="http://getharmony.io">Harmony</a> and <a href="http://drupal.org">Drupal</a></footer>
+    </div>
+
+    <div class="modal fade modal-narrow" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true"></div>
+    <div class="modal fade" id="thread-modal" tabindex="-1" role="dialog" aria-labelledby="threadModalLabel" aria-hidden="true"></div>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/arcadia.js"></script>
+  </body>
+</html>
