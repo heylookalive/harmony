@@ -339,12 +339,23 @@ body.modal-open #wrapper {
   background-color: #EDF6FF;
 }
 
-a.message-unread:hover {
+/*a.message-unread:hover {
   background-color: #E5F2FF;
-}
+}*/
 
 .message-teaser .date {
   font-size: 11px;
+}
+
+.navbar-unread {
+  color: #d9534f;
+}
+
+@media (min-width: @screen-sm-min) {
+  .navbar-unread {
+    margin-right: 5px;
+    color: #777;
+  }
 }
 
 .msg-notification {
